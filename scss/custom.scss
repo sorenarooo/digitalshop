@@ -1,0 +1,461 @@
+// primary & secondary color
+$secondary: #a2a4a7;
+$secondary-subtle: #e4e7ed;
+$danger: #D10024;
+$dangerest: #97061e;
+$light: #fff;
+$dark: #2c2b30;
+$darkest: #15161D;
+$darkest-subtle: #1E1F29;
+$bg: #FEF5DF;
+
+
+
+// font face vazir
+// @font-face {
+//     font-family: vazir;
+//     src: url('../Vazir.eot');
+//     src: url('FontName.eot?#iefix') format('FontName-opentype'),
+//          url('FontName.woff') format('woff'),
+//          url('FontName.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('../Vazir-Light.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ' Vazirmatn';
+  src: url('../Vazir-Medium.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('../Vazir-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('fonts/webfonts/Vazirmatn-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Vazirmatn', sans-serif, Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: medium;
+  line-height: 1.3em;
+}
+.me{
+  &-6{
+    margin-left: 5.5rem;
+  }
+}
+.myheader {
+  background-color: $dark;
+}
+
+.navbar {
+  &-brand {
+    color: $light;
+    font-family: cursive, Tahoma, Verdana, Geneva, sans-serif;
+
+    &:hover {
+      color: $light;
+      transform: rotateZ(-5deg);
+
+    }
+  }
+}
+
+.border {
+  &-primary {
+    border-color: $light !important;
+    background-color: $light;
+  }
+}
+
+.btn {
+  &-danger {
+    background-color: $danger !important;
+    color: $light;
+  }
+
+  &-search {
+    color: $danger;
+
+
+  }
+
+  &:hover {
+    color: $danger;
+    background-color: $light !important;
+  }
+
+  &-submit {
+    transition: all .5s ease;
+    width: 70%;
+    border-radius: 30px;
+    color: $light;
+    font-weight: 600;
+    background-color: $danger;
+    border: 1px solid $danger;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: $light;
+      color: $danger;
+    }
+
+    &:focus {
+      background-color: $light;
+      color: $danger;
+    }
+  }
+}
+
+
+.input {
+  &-search {
+    border: none;
+    background-color: $light;
+    box-sizing: border-box;
+
+    &:focus {
+      background-color: $light;
+    }
+
+    &:hover {
+      background-color: $light;
+    }
+
+  }
+
+}
+
+.nav {
+  &-link {
+    &:hover {
+      color: $danger!important ;
+
+    }
+  }
+}
+
+.text {
+  &-light {
+    color: $light;
+  }
+
+  &-muted {
+    color: #B9BABC !important;
+  }
+
+}
+
+.cart {
+  &-shop {
+    &:hover {
+      color: $danger;
+    }
+  }
+  &-page{
+    // font-size: 3rem;
+    color: $danger;
+    background: #ffeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+  }
+}
+
+.profile {
+  &:hover {
+    color: $danger;
+  }
+}
+
+.error{
+  color: $danger;
+  font-size: smaller;
+}
+
+.social {
+  &-float {
+    position: fixed;
+    left: 20px;
+    bottom: 44px;
+    z-index: 9999;
+    display: inline-block;
+    text-align: center !important;
+
+    & a {
+      display: block;
+      height: 50px;
+      margin-bottom: 10px !important;
+      width: 50px;
+      transition: all 0.3s ease-in;
+      position: relative;
+      z-index: 9999;
+      background-color: #0da13a;
+      border-radius: 100%;
+      padding: 6px;
+
+      & svg {
+        margin-top: 3px !important;
+      }
+    }
+  }
+}
+
+.container {
+  &::before {
+    content: "";
+    display: table;
+  }
+}
+
+.row {
+  &::before {
+    content: "";
+    display: table;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.shop {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 190px;
+    width: 60%;
+    background: $danger;
+    opacity: 0.9;
+    transform: skewX(45deg);
+  }
+
+  &-img {
+    position: relative;
+    background-color: $secondary;
+    z-index: -1;
+    border: $secondary solid 1px;
+
+    &>img {
+      width: 100%;
+      transition: 0.2s all;
+    }
+  }
+
+  &-body {
+    position: absolute;
+    top: 0;
+    width: 75%;
+    padding: 30px;
+    text-align: start;
+    z-index: 10;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    width: 100%;
+    background: $danger;
+    opacity: 0.9;
+    transform: skewX(45deg) translateX(100%);
+  }
+}
+
+.product {
+  &:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.2s transform;
+  }
+}
+
+.cta {
+  &-btn {
+    color: $light;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: $light;
+  transition: 0.2s color;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.section {
+  &-nav {
+    color: $secondary;
+  }
+}
+
+.card {
+  &:hover {
+    border-color: $danger;
+    border-width: 2px;
+    transition: 0.2s color;
+  }
+
+  & i {
+    color: $danger;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  & .badge1 {
+    top: 15px;
+    right: 15px;
+  }
+
+  & .badge2 {
+    top: 15px;
+    right: 75px;
+    background-color: $light !important;
+
+
+  }
+
+  &-title {
+    color: $dark;
+  }
+
+  &-price {
+    color: $danger;
+    font-weight: bold;
+  }
+
+  & a {
+    font-weight: bold;
+    border-width: 2px;
+
+    &:hover {
+      background-color: $light;
+      color: $danger;
+    }
+  }
+}
+
+.bg {
+  &-secondary {
+    background-color: $secondary!important;
+
+    &-subtle {
+      background-color: $secondary-subtle!important;
+    }
+  }
+
+  &-darkest {
+    background-color: $darkest;
+
+    &-subtle {
+      background-color: $darkest-subtle;
+    }
+  }
+
+  &-light {
+    background-color: $light!important;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotsell {
+  text-align: center;
+}
+
+.hotsell .hotsell-counter>li {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: $danger;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0px 4px;
+}
+
+.hotsell .hotsell-counter>li>div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hotsell .hotsell-counter>li>div span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.footer {
+  &-first {
+    background-color: black;
+  }
+
+  &-second {
+    background-color: $dark;
+  }
+}
+
+footer a {
+  &:hover {
+    color: $danger !important;
+  }
+}

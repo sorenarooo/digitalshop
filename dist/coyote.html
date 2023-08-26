@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> -->
+    <title>my coyote</title>
+</head>
+
+<body>
+    <div class="border-bottom border-danger border-4 myheader">
+        <div class="container">
+            <header class="py-3">
+                <nav class="d-lg-flex align-items-lg-center">
+                    <div class="d-flex align-items-center col-lg-6 col-12">
+                        <a href="#" class="navbar-brand fw-bolder fs-2 col-3 me-3">COYOTE</a>
+                        <form class="w-75 col-9 search-bar">
+                            <div class="border-primary ps-3 py-1 rounded-pill d-flex me-3">
+                                <a href="#" class="btn-search me-1 py-2 ps-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </a>
+                                <input type="text" name="search" id="" class="form-control w-75 input-search ms-1"
+                                    placeholder="جستجو...">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-3 mt-lg-0 d-flex  align-items-center">
+                        <ul class="nav ms-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" aria-current="page" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    لیست کالاها</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" href="#">لینک</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">لینک</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">درباره ما</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center ms-auto">
+                            <div class="d-inline me-3">
+                                <a href="../dist/cart.html" title target="_self" data-bs-target="#cartPage"
+                                    class="position-relative cart-shop">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="mt-2 bi bi-cart3" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>
+                                    <span
+                                        class="position-absolute top-0 start-0 translate-middle badge rounded-circle p-1 bg-danger small">
+                                        1+
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-inline me-3">
+                                <a href="../dist/favourite.html" title target="_self" data-bs-target="#favouritePage"
+                                    class="position-relative cart-shop">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-heart mt-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                    <span
+                                        class="position-absolute top-0 start-0 translate-middle badge rounded-circle p-1 bg-danger small">
+                                        1+
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-inline">
+                                <a href="../dist/register.html" title target="_self" data-bs-target="#profilePage"
+                                    class="profile d-inline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="mt-2 bi bi-cart3" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <main>
+        <section class="container mt-5 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="shop mt-4">
+                        <div class="shop-img">
+                            <img src="../image/graphic.jpg" alt="#">
+                        </div>
+                        <div class="shop-body">
+                            <h3 style="color: #fff;">کارت<br>گرافیک</h3>
+                            <a href="#" class="cta-btn d-flex align-items-center">اطلاعات بیشتر<i
+                                    class="bi bi-arrow-left-circle-fill text-light ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="shop mt-4">
+                        <div class="shop-img">
+                            <img src="../image/graphic.jpg" class="img-fluid" style="width: 100%;" alt="#">
+                        </div>
+                        <div class="shop-body">
+                            <h3 style="color: #fff;">قطعات <br>کامپیوتر</h3>
+                            <a href="#" class="cta-btn d-flex align-items-center ">اطلاعات بیشتر<i
+                                    class="bi bi-arrow-left-circle-fill text-light ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="shop mt-4">
+                        <div class="shop-img">
+                            <img src="../image/graphic.jpg" class="img-fluid" style="width: 100%;" alt="#">
+                        </div>
+                        <div class="shop-body">
+                            <h3 style="color: #fff;">کارت<br>گرافیک</h3>
+                            <a href="#" class="cta-btn d-flex align-items-center">اطلاعات بیشتر<i
+                                    class="bi bi-arrow-left-circle-fill text-light ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="container my-5">
+            <section>
+                <div class="col-md-12">
+                    <div class="row mt-2 mb-4 align-items-center">
+                        <div class="col-12 col-lg-8">
+                            <h3 class="title">محصولات جدید</h3>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <ul class="nav nav-underline">
+                                <li class="nav-item">
+                                    <a class="nav-link Active section-nav me-2 fs-5" aria-current="page" href="#">لپ
+                                        تاپ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link section-nav me-2 fs-5" href="#">موبایل</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link section-nav me-2 fs-5" href="#">دوربین</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link section-nav me-2 fs-5" href="#">لوازم جانبی</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center my-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-4">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-4">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-4">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section>
+            <div class="bg-secondary-subtle bubble py-5 my-5">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <div class="hotsell mb-4">
+                                <ul class="hotsell-counter m-0 p-0">
+                                    <li>
+                                        <div>
+                                            <h3 class="text-light">02</h3>
+                                            <span>روز</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h3 class="text-light">10</h3>
+                                            <span>ساعت</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h3 class="text-light">34</h3>
+                                            <span>دقیقه</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h3 class="text-light">52</h3>
+                                            <span>ثانیه</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h2 class="text-uppercase">فروش ویژه این هفته</h2>
+                                <p>کالکشن جدید تخفیف بالای 50 % </p>
+                                <a href="#"
+                                    class="btn btn-lg btn-danger rounded-pill px-4 py-3 text-center mt-2 text-bold">حالا
+                                    خرید کن</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container my-5">
+            <section>
+                <div class="col-md-12">
+                    <div class="row mt-2 mb-4 align-items-center">
+                        <div class="col-12 col-lg-8">
+                            <h3 class="title">پرفروش ترین ها</h3>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <ul class="nav nav-underline">
+                                <li class="nav-item">
+                                    <a class="nav-link Active section-nav me-2 fs-5" aria-current="page" href="#">لپ
+                                        تاپ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link section-nav me-2 fs-5" href="#">موبایل</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link section-nav me-2 fs-5" href="#">دوربین</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link section-nav me-2 fs-5" href="#">لوازم جانبی</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center my-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-4">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-4">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-4">
+                            <div class="card position-relative">
+                                <i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="اضافه کردن به علاقه مندی ها"
+                                    type="button"></i>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="badge1 badge text-bg-danger border border-danger  border-2 rounded-0 px-2 position-absolute fw-bold">NEW</span>
+                                    <span
+                                        class="badge2 badge text-bg-danger border border-danger  border-2 rounded-0  text-danger px-2 position-absolute fw-bold">25%-</span>
+                                </div>
+                                <img src="../image/graphic.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">کارت گرافیک</h5>
+                                    <p class="card-text">مدل 580 رم 400....</p>
+                                    <p class="card-price d-inline">2,000,000 تومان </p>
+                                    <span class="text-decoration-line-through d-inline text-muted">2,500,000</span>
+                                    <div class="mt-3 bg-dark">
+
+                                        <a href="#" class="btn btn-danger rounded rounded-pill my-3">اضافه به سبد
+                                            خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <div class="social-float">
+        <a aria-label="whatsapp" href="https://api.whatsapp.com/send?phone=989045830413" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                style="color: #fff; max-width:100%; height:auto;" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+            </svg></a>
+        <a aria-label="phone" href="tel:+989045830413" class="phone-button"><svg xmlns="http://www.w3.org/2000/svg"
+                width="30" height="30" fill="currentColor" style="color: #fff; max-width:100%; height:auto;"
+                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg></a>
+    </div>
+
+    <footer class="border-top border-danger border-4">
+        <div class="bg-darkest py-5">
+            <div class="container">
+                <div class="row my-3">
+
+                    <div class="col-lg-3 col-sm-6">
+
+                        <h3 class="text-light">درباره ما</h3>
+                        <p class="text-secondary pt-2">لورم ایپسوم متن ساختگاعت چاپ و با استفاده از
+                            طراحان گرافیک است</p>
+                        <ul>
+                            <li class="mt-3">
+                                <a href="#" class="text-secondary">
+                                    <i class="bi bi-geo-alt-fill pe-2 text-danger"></i>
+                                    ایران، شیراز، خیابان فلسطین</a>
+                            </li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+                                    <i class="bi bi-telephone-fill pe-2 text-danger"></i>
+                                    989045830413+</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+                                    <i class="bi bi-envelope pe-0 pe-lg-2 text-danger"></i>
+                                    www.shayangh@yahoo.com</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3">
+
+                        <h3 class="text-light">دسته بندی کالاها</h3>
+
+                        <ul>
+                            <li class="mt-3">
+                                <a href="#" class="text-secondary">
+
+                                    فروش ویژه</a>
+                            </li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    لپ تاپ</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    قطعات کامپیوتر</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    موبایل</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    دوربین</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3">
+
+                        <h3 class="text-light">اطلاعات</h3>
+
+                        <ul>
+                            <li class="mt-3">
+                                <a href="#" class="text-secondary">
+
+                                    درباره ما</a>
+                            </li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    تماس با ما</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    سفارشات و مرجوعی ها</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    .......</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    .......</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3">
+
+                        <h3 class="text-light">خدمات</h3>
+
+                        <ul>
+                            <li class="mt-3">
+                                <a href="#" class="text-secondary">
+
+                                    پروفایل من</a>
+                            </li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    سبد خرید من</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    لیست علاقه مندی ها</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    .....</a></li>
+                            <li class="mt-3"><a href="#" class="text-secondary">
+
+                                    به کمک نیاز دارم</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom bg-dark py-5">
+            <div class="container text-center">
+                <span class="text-muted"> حق کپی رایت این سایت محفوظ است | این سایت توسط <a href="#" class="">فرانک</a>
+                    طراحی شده است.</span>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script src="../scss/myscript.js"></script>
+</body>
+
+</html>
